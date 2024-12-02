@@ -1,182 +1,215 @@
-# deepfakes_faceswap
-
-### Important information for **Patreon** and **PayPal** supporters. Please see this forum post: https://forum.faceswap.dev/viewtopic.php?f=14&t=3120
-
-<p align="center">
-  <a href="https://faceswap.dev"><img src="https://i.imgur.com/zHvjHnb.png"></img></a>
-<br />FaceSwap is a tool that utilizes deep learning to recognize and swap faces in pictures and videos.
+<div class="Box-sc-g0xbh4-0 QkQOb js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="379678" _msthash="334">deepfakes_faceswap</h1><a id="user-content-deepfakes_faceswap" class="anchor" aria-label="永久链接：deepfakes_faceswap" href="#deepfakes_faceswap" _mstaria-label="769873" _msthash="335"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="217536475" _msthash="336"><strong _istranslated="1">Patreon</strong> 和 <strong _istranslated="1">PayPal</strong> 支持者的重要信息。请参阅此论坛帖子：<a href="https://forum.faceswap.dev/viewtopic.php?f=14&amp;t=3120" rel="nofollow" _istranslated="1">https://forum.faceswap.dev/viewtopic.php?f=14&amp;t=3120</a></h3><a id="user-content-important-information-for-patreon-and-paypal-supporters-please-see-this-forum-post-httpsforumfaceswapdevviewtopicphpf14t3120" class="anchor" aria-label="永久链接：Patreon 和 PayPal 支持者的重要信息。请参阅此论坛帖子：https://forum.faceswap.dev/viewtopic.php?f=14&amp;t=3120" href="#important-information-for-patreon-and-paypal-supporters-please-see-this-forum-post-httpsforumfaceswapdevviewtopicphpf14t3120" _mstaria-label="13032500" _msthash="337"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p align="center" dir="auto">
+  <a href="https://faceswap.dev" rel="nofollow"><img src="https://camo.githubusercontent.com/4eefa4da5d71010147b690aa6946ed4fa8e60d86e8e2a08ad612040849827d2e/68747470733a2f2f692e696d6775722e636f6d2f7a48766a486e622e706e67" data-canonical-src="https://i.imgur.com/zHvjHnb.png" style="max-width: 100%;"></a>
+<br><font _mstmutation="1" _msttexthash="267797062" _msthash="338">FaceSwap 是一种利用深度学习来识别和交换图片和视频中的面孔的工具。</font></p>
+<p align="center" dir="auto">
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/45485b227beb6834f98353a7e299cd3d7b413511211320cb7732acbbb8485bb4/68747470733a2f2f692e696d6775722e636f6d2f6e5748464c44662e6a7067"><img src="https://camo.githubusercontent.com/45485b227beb6834f98353a7e299cd3d7b413511211320cb7732acbbb8485bb4/68747470733a2f2f692e696d6775722e636f6d2f6e5748464c44662e6a7067" data-canonical-src="https://i.imgur.com/nWHFLDf.jpg" style="max-width: 100%;"></a>
 </p>
-<p align="center">
-<img src = "https://i.imgur.com/nWHFLDf.jpg"></img>
-</p>
-
-<p align="center">
-<a href="https://www.patreon.com/bePatron?u=23238350"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png"></img></a>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://discord.gg/FC54sYg"><img src="https://i.imgur.com/gIpztkv.png"></img></a></p>
-
-<p align="center">
-  <a href="https://www.dailymotion.com/video/x810mot"><img src="https://user-images.githubusercontent.com/36920800/178301720-b69841bb-a1ca-4c20-91db-a2a10f5692ca.png"></img></a>
-<br />Emma Stone/Scarlett Johansson FaceSwap using the Phaze-A model
-</p>
-
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=r1jng79a5xc"><img src="https://img.youtube.com/vi/r1jng79a5xc/0.jpg"></img></a>
-<br />Jennifer Lawrence/Steve Buscemi FaceSwap using the Villain model
-</p>
-
-
-![Build Status](https://github.com/deepfakes/faceswap/actions/workflows/pytest.yml/badge.svg) [![Documentation Status](https://readthedocs.org/projects/faceswap/badge/?version=latest)](https://faceswap.readthedocs.io/en/latest/?badge=latest)
-
-Make sure you check out [INSTALL.md](INSTALL.md) before getting started.
-
-- [deepfakes\_faceswap](#deepfakes_faceswap)
-    - [Important information for **Patreon** and **PayPal** supporters. Please see this forum post: https://forum.faceswap.dev/viewtopic.php?f=14\&t=3120](#important-information-for-patreon-and-paypal-supporters-please-see-this-forum-post-httpsforumfaceswapdevviewtopicphpf14t3120)
-- [Manifesto](#manifesto)
-  - [FaceSwap has ethical uses.](#faceswap-has-ethical-uses)
-- [How To setup and run the project](#how-to-setup-and-run-the-project)
-- [Overview](#overview)
-  - [Extract](#extract)
-  - [Train](#train)
-  - [Convert](#convert)
-  - [GUI](#gui)
-- [General notes:](#general-notes)
-- [Help I need support!](#help-i-need-support)
-  - [Discord Server](#discord-server)
-  - [FaceSwap Forum](#faceswap-forum)
-- [Donate](#donate)
-  - [Patreon](#patreon)
-  - [One time Donations](#one-time-donations)
-    - [@torzdf](#torzdf)
-    - [@andenixa](#andenixa)
-- [How to contribute](#how-to-contribute)
-  - [For people interested in the generative models](#for-people-interested-in-the-generative-models)
-  - [For devs](#for-devs)
-  - [For non-dev advanced users](#for-non-dev-advanced-users)
-  - [For end-users](#for-end-users)
-- [About machine learning](#about-machine-learning)
-  - [How does a computer know how to recognize/shape faces? How does machine learning work? What is a neural network?](#how-does-a-computer-know-how-to-recognizeshape-faces-how-does-machine-learning-work-what-is-a-neural-network)
-
-# Manifesto
-
-## FaceSwap has ethical uses.
-
-When faceswapping was first developed and published, the technology was groundbreaking, it was a huge step in AI development. It was also completely ignored outside of academia because the code was confusing and fragmentary. It required a thorough understanding of complicated AI techniques and took a lot of effort to figure it out. Until one individual brought it together into a single, cohesive collection. It ran, it worked, and as is so often the way with new technology emerging on the internet, it was immediately used to create inappropriate content. Despite the inappropriate uses the software was given originally, it was the first AI code that anyone could download, run and learn by experimentation without having a Ph.D. in math, computer theory, psychology, and more. Before "deepfakes" these techniques were like black magic, only practiced by those who could understand all of the inner workings as described in esoteric and endlessly complicated books and papers.
-
-"Deepfakes" changed all that and anyone could participate in AI development. To us, developers, the release of this code opened up a fantastic learning opportunity. It allowed us to build on ideas developed by others, collaborate with a variety of skilled coders, experiment with AI whilst learning new skills and ultimately contribute towards an emerging technology which will only see more mainstream use as it progresses.
-
-Are there some out there doing horrible things with similar software? Yes. And because of this, the developers have been following strict ethical standards. Many of us don't even use it to create videos, we just tinker with the code to see what it does. Sadly, the media concentrates only on the unethical uses of this software. That is, unfortunately, the nature of how it was first exposed to the public, but it is not representative of why it was created, how we use it now, or what we see in its future. Like any technology, it can be used for good or it can be abused. It is our intention to develop FaceSwap in a way that its potential for abuse is minimized whilst maximizing its potential as a tool for learning, experimenting and, yes, for legitimate faceswapping.
-
-We are not trying to denigrate celebrities or to demean anyone. We are programmers, we are engineers, we are Hollywood VFX artists, we are activists, we are hobbyists, we are human beings. To this end, we feel that it's time to come out with a standard statement of what this software is and isn't as far as us developers are concerned.
-
-- FaceSwap is not for creating inappropriate content.
-- FaceSwap is not for changing faces without consent or with the intent of hiding its use.
-- FaceSwap is not for any illicit, unethical, or questionable purposes.
-- FaceSwap exists to experiment and discover AI techniques, for social or political commentary, for movies, and for any number of ethical and reasonable uses.
-
-We are very troubled by the fact that FaceSwap can be used for unethical and disreputable things. However, we support the development of tools and techniques that can be used ethically as well as provide education and experience in AI for anyone who wants to learn it hands-on. We will take a zero tolerance approach to anyone using this software for any unethical purposes and will actively discourage any such uses.
-
-# How To setup and run the project
-FaceSwap is a Python program that will run on multiple Operating Systems including Windows, Linux, and MacOS.
-
-See [INSTALL.md](INSTALL.md) for full installation instructions. You will need a modern GPU with CUDA support for best performance. Many AMD GPUs are supported through DirectML (Windows) and ROCm (Linux).
-
-# Overview
-The project has multiple entry points. You will have to:
- - Gather photos and/or videos
- - **Extract** faces from your raw photos
- - **Train** a model on the faces extracted from the photos/videos
- - **Convert** your sources with the model
-
-Check out [USAGE.md](USAGE.md) for more detailed instructions.
-
-## Extract
-From your setup folder, run `python faceswap.py extract`. This will take photos from `src` folder and extract faces into `extract` folder.
-
-## Train
-From your setup folder, run `python faceswap.py train`. This will take photos from two folders containing pictures of both faces and train a model that will be saved inside the `models` folder.
-
-## Convert
-From your setup folder, run `python faceswap.py convert`. This will take photos from `original` folder and apply new faces into `modified` folder.
-
-## GUI
-Alternatively, you can run the GUI by running `python faceswap.py gui`
-
-# General notes:
-- All of the scripts mentioned have `-h`/`--help` options with arguments that they will accept. You're smart, you can figure out how this works, right?!
-
-NB: there is a conversion tool for video. This can be accessed by running `python tools.py effmpeg -h`. Alternatively, you can use [ffmpeg](https://www.ffmpeg.org) to convert video into photos, process images, and convert images back to the video.
-
-
-**Some tips:**
-
-Reusing existing models will train much faster than starting from nothing.
-If there is not enough training data, start with someone who looks similar, then switch the data.
-
-# Help I need support!
-## Discord Server
-Your best bet is to join the [FaceSwap Discord server](https://discord.gg/FC54sYg) where there are plenty of users willing to help. Please note that, like this repo, this is a SFW Server!
-
-## FaceSwap Forum
-Alternatively, you can post questions in the [FaceSwap Forum](https://faceswap.dev/forum). Please do not post general support questions in this repo as they are liable to be deleted without response.
-
-# Donate
-The developers work tirelessly to improve and develop FaceSwap. Many hours have been put in to provide the software as it is today, but this is an extremely time-consuming process with no financial reward. If you enjoy using the software, please consider donating to the devs, so they can spend more time implementing improvements.
-
-## Patreon
-The best way to support us is through our Patreon page:
-
-[![become-a-patron](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=23238350)
-
-## One time Donations
-Alternatively you can give a one off donation to any of our Devs:
-### @torzdf
- There is very little FaceSwap code that hasn't been touched by torzdf. He is responsible for implementing the GUI, FAN aligner, MTCNN detector and porting the Villain, DFL-H128 and DFaker models to FaceSwap, as well as significantly improving many areas of the code.
-
-**Bitcoin:** bc1qpm22suz59ylzk0j7qk5e4c7cnkjmve2rmtrnc6
-
-**Ethereum:** 0xd3e954dC241B87C4E8E1A801ada485DC1d530F01
-
-**Monero:** 45dLrtQZ2pkHizBpt3P3yyJKkhcFHnhfNYPMSnz3yVEbdWm3Hj6Kr5TgmGAn3Far8LVaQf1th2n3DJVTRkfeB5ZkHxWozSX
-
-**Paypal:** [![torzdf](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JZ8PP3YE9J62L)
-
-### @andenixa
-Creator of the Unbalanced and OHR models, as well as expanding various capabilities within the training process. Andenixa is currently working on new models and will take requests for donations.
-
-**Paypal:** [![andenixa](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NRVLQYGS6NWTU)
-
-# How to contribute
-
-## For people interested in the generative models
- - Go to the 'faceswap-model' to discuss/suggest/commit alternatives to the current algorithm.
-
-## For devs
- - Read this README entirely
- - Fork the repo
- - Play with it
- - Check issues with the 'dev' tag
- - For devs more interested in computer vision and openCV, look at issues with the 'opencv' tag. Also feel free to add your own alternatives/improvements
-
-## For non-dev advanced users
- - Read this README entirely
- - Clone the repo
- - Play with it
- - Check issues with the 'advuser' tag
- - Also go to the '[faceswap Forum](https://faceswap.dev/forum)' and help others.
-
-## For end-users
- - Get the code here and play with it if you can
- - You can also go to the [faceswap Forum](https://faceswap.dev/forum) and help or get help from others.
- - Be patient. This is a relatively new technology for developers as well. Much effort is already being put into making this program easy to use for the average user. It just takes time!
- - **Notice** Any issue related to running the code has to be opened in the [faceswap Forum](https://faceswap.dev/forum)!
-
-# About machine learning
-
-## How does a computer know how to recognize/shape faces? How does machine learning work? What is a neural network?
-It's complicated. Here's a good video that makes the process understandable:
-[![How Machines Learn](https://img.youtube.com/vi/R9OHn5ZF4Uo/0.jpg)](https://www.youtube.com/watch?v=R9OHn5ZF4Uo)
-
-Here's a slightly more in depth video that tries to explain the basic functioning of a neural network:
-[![How Machines Learn](https://img.youtube.com/vi/aircAruvnKk/0.jpg)](https://www.youtube.com/watch?v=aircAruvnKk)
-
-tl;dr: training data + trial and error
+<p align="center" dir="auto">
+<a href="https://www.patreon.com/bePatron?u=23238350" rel="nofollow"><img src="https://camo.githubusercontent.com/044a949826a3db38839983c98265b4c40fbe92c8953926639e9149d729a9dc1e/68747470733a2f2f63352e70617472656f6e2e636f6d2f65787465726e616c2f6c6f676f2f6265636f6d655f615f706174726f6e5f627574746f6e2e706e67" data-canonical-src="https://c5.patreon.com/external/logo/become_a_patron_button.png" style="max-width: 100%;"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://discord.gg/FC54sYg" rel="nofollow"><img src="https://camo.githubusercontent.com/2135baa68ea6d2e64c717f113295c86a381c6297106e89ad58c23b7c8dc9fb91/68747470733a2f2f692e696d6775722e636f6d2f6749707a746b762e706e67" data-canonical-src="https://i.imgur.com/gIpztkv.png" style="max-width: 100%;"></a></p>
+<p align="center" dir="auto">
+  <a href="https://www.dailymotion.com/video/x810mot" rel="nofollow"><img src="https://user-images.githubusercontent.com/36920800/178301720-b69841bb-a1ca-4c20-91db-a2a10f5692ca.png" style="max-width: 100%;"></a>
+<br><font _mstmutation="1" _msttexthash="94604406" _msthash="339">Emma Stone/Scarlett Johansson 使用 Phaze-A 模型进行 FaceSwap</font></p>
+<p align="center" dir="auto">
+  <a href="https://www.youtube.com/watch?v=r1jng79a5xc" rel="nofollow"><img src="https://camo.githubusercontent.com/37ba6d164d8ff3b85120909a6adcaf340c2cc5e235afabf25e57ab9e74e89fa4/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f72316a6e673739613578632f302e6a7067" data-canonical-src="https://img.youtube.com/vi/r1jng79a5xc/0.jpg" style="max-width: 100%;"></a>
+<br><font _mstmutation="1" _msttexthash="356199493" _msthash="340">詹妮弗·劳伦斯 （Jennifer Lawrence）/史蒂夫·布西米 （Steve Buscemi） 使用 Villain 模型进行 FaceSwap</font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/deepfakes/faceswap/actions/workflows/pytest.yml/badge.svg"><img src="https://github.com/deepfakes/faceswap/actions/workflows/pytest.yml/badge.svg" alt="构建状态" style="max-width: 100%;" _mstalt="181376" _msthash="341"></a> <a href="https://faceswap.readthedocs.io/en/latest/?badge=latest" rel="nofollow"><img src="https://camo.githubusercontent.com/f40c73ddd8fd8c609cd1d277c16f4f5ed454b15f4ea7a661883cfe272f323a92/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f66616365737761702f62616467652f3f76657273696f6e3d6c6174657374" alt="文档状态" data-canonical-src="https://readthedocs.org/projects/faceswap/badge/?version=latest" style="max-width: 100%;" _mstalt="424515" _msthash="342"></a></p>
+<p dir="auto" _msttexthash="41576652" _msthash="343">请务必在开始之前查看 <a href="/deepfakes/faceswap/blob/master/INSTALL.md" _istranslated="1">INSTALL.md</a>。</p>
+<ul dir="auto">
+<li><a href="#deepfakes_faceswap" _msttexthash="379678" _msthash="344">deepfakes_faceswap</a>
+<ul dir="auto">
+<li><a href="#important-information-for-patreon-and-paypal-supporters-please-see-this-forum-post-httpsforumfaceswapdevviewtopicphpf14t3120" _msttexthash="217536475" _msthash="345"><strong _istranslated="1">Patreon</strong> 和 <strong _istranslated="1">PayPal</strong> 支持者的重要信息。请参阅此论坛帖子：https://forum.faceswap.dev/viewtopic.php?f=14&amp;t=3120</a></li>
+</ul>
+</li>
+<li><a href="#manifesto" _msttexthash="5808881" _msthash="346">宣言</a>
+<ul dir="auto">
+<li><a href="#faceswap-has-ethical-uses" _msttexthash="37675911" _msthash="347">FaceSwap 有道德用途。</a></li>
+</ul>
+</li>
+<li><a href="#how-to-setup-and-run-the-project" _msttexthash="40399840" _msthash="348">如何设置和运行项目</a></li>
+<li><a href="#overview" _msttexthash="6290102" _msthash="349">概述</a>
+<ul dir="auto">
+<li><a href="#extract" _msttexthash="4557280" _msthash="350">提取</a></li>
+<li><a href="#train" _msttexthash="6436729" _msthash="351">火车</a></li>
+<li><a href="#convert" _msttexthash="5987124" _msthash="352">转换</a></li>
+<li><a href="#gui" _msttexthash="21683324" _msthash="353">图形用户界面</a></li>
+</ul>
+</li>
+<li><a href="#general-notes" _msttexthash="22209798" _msthash="354">一般说明：</a></li>
+<li><a href="#help-i-need-support" _msttexthash="37596377" _msthash="355">帮助 我需要支持！</a>
+<ul dir="auto">
+<li><a href="#discord-server" _msttexthash="13621127" _msthash="356">Discord 服务器</a></li>
+<li><a href="#faceswap-forum" _msttexthash="11735035" _msthash="357">FaceSwap 论坛</a></li>
+</ul>
+</li>
+<li><a href="#donate" _msttexthash="2313584" _msthash="358">捐</a>
+<ul dir="auto">
+<li><a href="#patreon" _msttexthash="8081437" _msthash="359">Patreon 公司</a></li>
+<li><a href="#one-time-donations" _msttexthash="14780285" _msthash="360">一次性捐款</a>
+<ul dir="auto">
+<li><a href="#torzdf" _msttexthash="95979" _msthash="361">@torzdf</a></li>
+<li><a href="#andenixa" _msttexthash="131885" _msthash="362">@andenixa</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#how-to-contribute" _msttexthash="12257583" _msthash="363">如何贡献</a>
+<ul dir="auto">
+<li><a href="#for-people-interested-in-the-generative-models" _msttexthash="50056539" _msthash="364">对于对生成模型感兴趣的人</a></li>
+<li><a href="#for-devs" _msttexthash="16119259" _msthash="365">对于开发人员</a></li>
+<li><a href="#for-non-dev-advanced-users" _msttexthash="37022492" _msthash="366">对于非开发高级用户</a></li>
+<li><a href="#for-end-users" _msttexthash="19749535" _msthash="367">对于最终用户</a></li>
+</ul>
+</li>
+<li><a href="#about-machine-learning" _msttexthash="16432221" _msthash="368">关于机器学习</a>
+<ul dir="auto">
+<li><a href="#how-does-a-computer-know-how-to-recognizeshape-faces-how-does-machine-learning-work-what-is-a-neural-network" _msttexthash="381517760" _msthash="369">计算机如何知道如何识别/塑造面部？机器学习的工作原理是什么？什么是神经网络？</a></li>
+</ul>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5808881" _msthash="370">宣言</h1><a id="user-content-manifesto" class="anchor" aria-label="永久链接： 宣言" href="#manifesto" _mstaria-label="404274" _msthash="371"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="37675911" _msthash="372">FaceSwap 有道德用途。</h2><a id="user-content-faceswap-has-ethical-uses" class="anchor" aria-label="永久链接：FaceSwap 具有道德用途。" href="#faceswap-has-ethical-uses" _mstaria-label="992849" _msthash="373"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="14258206248" _msthash="374">当换脸首次开发和发布时，这项技术是开创性的，是 AI 发展的一大步。它在学术界之外也完全被忽视，因为代码令人困惑和零碎。它需要对复杂的 AI 技术有透彻的了解，并花费大量精力才能弄清楚。直到一个人将其整合成一个单一的、有凝聚力的系列。它运行、工作，就像互联网上出现的新技术一样，它立即被用来创建不适当的内容。尽管该软件最初被赋予了不适当的用途，但它是第一个任何人都可以下载、运行和通过实验学习的 AI 代码，而无需拥有数学、计算机理论、心理学等博士学位。在“深度伪造”之前，这些技术就像黑魔法一样，只有那些能够理解深奥而复杂的书籍和论文中描述的所有内部运作的人才能使用。</p>
+<p dir="auto" _msttexthash="3986053253" _msthash="375">“Deepfakes”改变了这一切，任何人都可以参与 AI 开发。对于我们开发人员来说，此代码的发布提供了一个绝佳的学习机会。它使我们能够以他人开发的想法为基础，与各种熟练的编码人员合作，在学习新技能的同时试验 AI，并最终为一项新兴技术做出贡献，随着技术的发展，这项技术只会得到更多的主流应用。</p>
+<p dir="auto" _msttexthash="10782363865" _msthash="376">是否有人用类似的软件做可怕的事情？是的。正因为如此，开发人员一直遵循严格的道德标准。我们中的许多人甚至不使用它来制作视频，我们只是修改代码，看看它有什么作用。可悲的是，媒体只关注该软件的不道德使用。不幸的是，这就是它最初如何向公众展示的性质，但它并不代表它为什么被创建，我们现在如何使用它，或者我们对它的未来所看到的。像任何技术一样，它可以被用于善事，也可以被滥用。我们的目的是以一种方式开发 FaceSwap，以最大限度地减少其滥用的可能性，同时最大限度地发挥其作为学习、实验和合法换脸工具的潜力。</p>
+<p dir="auto" _msttexthash="2327369447" _msthash="377">我们不是要诋毁名人或贬低任何人。我们是程序员，我们是工程师，我们是好莱坞视觉特效艺术家，我们是活动家，我们是业余爱好者，我们是人类。为此，我们认为是时候出一个标准声明了这个软件是什么，就我们开发人员而言，它不是什么。</p>
+<ul dir="auto">
+<li _msttexthash="84086912" _msthash="378">FaceSwap 不是用于创建不适当的内容。</li>
+<li _msttexthash="240801925" _msthash="379">FaceSwap 不是为了在未经同意或意图隐藏其用途的情况下更换面孔。</li>
+<li _msttexthash="138732061" _msthash="380">FaceSwap 不用于任何非法、不道德或可疑的目的。</li>
+<li _msttexthash="464228908" _msthash="381">FaceSwap 的存在是为了实验和发现 AI 技术、社会或政治评论、电影以及任何数量的道德和合理用途。</li>
+</ul>
+<p dir="auto" _msttexthash="3071826953" _msthash="382">我们对 FaceSwap 可用于不道德和声名狼藉的事情这一事实感到非常困扰。但是，我们支持开发可以合乎道德地使用的工具和技术，并为任何想要动手学习 AI 的人提供 AI 方面的教育和经验。我们将对任何将本软件用于任何不道德目的的人采取零容忍态度，并将积极劝阻任何此类用途。</p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="40399840" _msthash="383">如何设置和运行项目</h1><a id="user-content-how-to-setup-and-run-the-project" class="anchor" aria-label="永久链接： 如何设置和运行项目" href="#how-to-setup-and-run-the-project" _mstaria-label="1220583" _msthash="384"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="269848358" _msthash="385">FaceSwap 是一个 Python 程序，可在多种操作系统上运行，包括 Windows、Linux 和 MacOS。</p>
+<p dir="auto" _msttexthash="883422410" _msthash="386">有关完整的安装说明，请参阅 <a href="/deepfakes/faceswap/blob/master/INSTALL.md" _istranslated="1">INSTALL.md</a>。您需要支持 CUDA 的现代 GPU 才能获得最佳性能。许多 AMD GPU 通过 DirectML （Windows） 和 ROCm （Linux） 提供支持。</p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6290102" _msthash="387">概述</h1><a id="user-content-overview" class="anchor" aria-label="永久链接： 概述" href="#overview" _mstaria-label="375934" _msthash="388"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="80825446" _msthash="389">该项目具有多个入口点。您必须：</p>
+<ul dir="auto">
+<li _msttexthash="34953048" _msthash="390">收集照片和/或视频</li>
+<li _msttexthash="34306857" _msthash="391">从 Raw 照片<strong _istranslated="1">中提取</strong>人脸</li>
+<li _msttexthash="95471467" _msthash="392">在从照片/视频中提取的人脸<strong _istranslated="1">上训练</strong>模型</li>
+<li _msttexthash="25066028" _msthash="393">使用模型<strong _istranslated="1">转换</strong>源</li>
+</ul>
+<p dir="auto" _msttexthash="82154410" _msthash="394">查看 <a href="/deepfakes/faceswap/blob/master/USAGE.md" _istranslated="1">USAGE.md</a> 以获取更详细的说明。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="4557280" _msthash="395">提取</h2><a id="user-content-extract" class="anchor" aria-label="永久链接：Extract" href="#extract" _mstaria-label="337805" _msthash="396"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="255660938" _msthash="397">从设置文件夹中，运行 .这将从文件夹中拍摄照片并将面孔提取到文件夹中。</font><code>python faceswap.py extract</code><code>src</code><code>extract</code></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="6436729" _msthash="398">火车</h2><a id="user-content-train" class="anchor" aria-label="永久链接：Train" href="#train" _mstaria-label="273234" _msthash="399"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="565105541" _msthash="400">从设置文件夹中，运行 .这将从两个包含两张人脸图片的文件夹中拍摄照片，并训练一个将保存在该文件夹中的模型。</font><code>python faceswap.py train</code><code>models</code></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="5987124" _msthash="401">转换</h2><a id="user-content-convert" class="anchor" aria-label="永久链接： 转换" href="#convert" _mstaria-label="340197" _msthash="402"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="272450685" _msthash="403">从设置文件夹中，运行 .这将从文件夹中拍摄照片并将新面孔应用到文件夹中。</font><code>python faceswap.py convert</code><code>original</code><code>modified</code></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="21683324" _msthash="404">图形用户界面</h2><a id="user-content-gui" class="anchor" aria-label="永久链接：GUI" href="#gui" _mstaria-label="200317" _msthash="405"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="50142599" _msthash="406">或者，您可以通过运行</font><code>python faceswap.py gui</code></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="22209798" _msthash="407">一般说明：</h1><a id="user-content-general-notes" class="anchor" aria-label="永久链接：一般说明：" href="#general-notes" _mstaria-label="539396" _msthash="408"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font _mstmutation="1" _msttexthash="559429507" _msthash="409">提到的所有脚本都有 / options 和它们将接受的参数。你很聪明，你可以弄清楚这是如何工作的，对吧？！</font><code>-h</code><code>--help</code></li>
+</ul>
+<p dir="auto"><font _mstmutation="1" _msttexthash="18814822" _msthash="410">NB: there is a conversion tool for video. This can be accessed by running . Alternatively, you can use <a href="https://www.ffmpeg.org" rel="nofollow" _mstmutation="1">ffmpeg</a> to convert video into photos, process images, and convert images back to the video.</font><code>python tools.py effmpeg -h</code></p>
+<p dir="auto"><strong _msttexthash="129116" _msthash="411">Some tips:</strong></p>
+<p dir="auto" _msttexthash="556750181" _msthash="412">重用现有模型比从头开始训练要快得多。
+如果没有足够的训练数据，请从看起来相似的人开始，然后切换数据。</p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="37596377" _msthash="413">帮助 我需要支持！</h1><a id="user-content-help-i-need-support" class="anchor" aria-label="永久链接：帮助我需要支持！" href="#help-i-need-support" _mstaria-label="702221" _msthash="414"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="13621127" _msthash="415">Discord 服务器</h2><a id="user-content-discord-server" class="anchor" aria-label="永久链接：Discord 服务器" href="#discord-server" _mstaria-label="551668" _msthash="416"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="755169922" _msthash="417">您最好的办法是加入 <a href="https://discord.gg/FC54sYg" rel="nofollow" _istranslated="1">FaceSwap Discord 服务器</a>，那里有很多用户愿意提供帮助。请注意，与此存储库一样，这是一个 SFW 服务器！</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="11735035" _msthash="418">FaceSwap 论坛</h2><a id="user-content-faceswap-forum" class="anchor" aria-label="永久链接：FaceSwap 论坛" href="#faceswap-forum" _mstaria-label="540189" _msthash="419"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="643108297" _msthash="420">或者，您可以在 <a href="https://faceswap.dev/forum" rel="nofollow" _istranslated="1">FaceSwap 论坛</a>中发布问题。请不要在此存储库中发布一般支持问题，因为它们可能会被删除且没有回复。</p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="2313584" _msthash="421">捐</h1><a id="user-content-donate" class="anchor" aria-label="永久链接： 捐赠" href="#donate" _mstaria-label="300651" _msthash="422"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="2100738562" _msthash="423">开发人员孜孜不倦地改进和开发 FaceSwap。为了提供今天的软件，已经投入了大量时间，但这是一个极其耗时的过程，而且没有经济回报。如果您喜欢使用该软件，请考虑向开发人员捐款，以便他们可以花更多时间实施改进。</p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="8081437" _msthash="424">Patreon 公司</h2><a id="user-content-patreon" class="anchor" aria-label="永久链接：Patreon" href="#patreon" _mstaria-label="337584" _msthash="425"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="130258934" _msthash="426">支持我们的最佳方式是通过我们的 Patreon 页面：</p>
+<p dir="auto"><a href="https://www.patreon.com/bePatron?u=23238350" rel="nofollow"><img src="https://camo.githubusercontent.com/044a949826a3db38839983c98265b4c40fbe92c8953926639e9149d729a9dc1e/68747470733a2f2f63352e70617472656f6e2e636f6d2f65787465726e616c2f6c6f676f2f6265636f6d655f615f706174726f6e5f627574746f6e2e706e67" alt="成为赞助人" data-canonical-src="https://c5.patreon.com/external/logo/become_a_patron_button.png" style="max-width: 100%;" _mstalt="269737" _msthash="427"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="14780285" _msthash="428">一次性捐款</h2><a id="user-content-one-time-donations" class="anchor" aria-label="永久链接：一次性捐款" href="#one-time-donations" _mstaria-label="680836" _msthash="429"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="151384558" _msthash="430">或者，您可以向我们的任何开发者提供一次性捐款：</p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="95979" _msthash="431">@torzdf</h3><a id="user-content-torzdf" class="anchor" aria-label="永久链接：@torzdf" href="#torzdf" _mstaria-label="337454" _msthash="432"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="1070547010" _msthash="433">很少有 FaceSwap 代码没有被 torzdf 触及。他负责实现 GUI、FAN 对齐器、MTCNN 检测器，并将 Villain、DFL-H128 和 DFaker 模型移植到 FaceSwap，并显著改进代码的许多领域。</p>
+<p dir="auto" _msttexthash="18482100" _msthash="434"><strong _istranslated="1">比特币：</strong>bc1qpm22suz59ylzk0j7qk5e4c7cnkjmve2rmtrnc6</p>
+<p dir="auto" _msttexthash="16402958" _msthash="435"><strong _istranslated="1">以太坊：</strong>0xd3e954dC241B87C4E8E1A801ada485DC1d530F01</p>
+<p dir="auto" _msttexthash="24450478" _msthash="436"><strong _istranslated="1">门罗币：</strong> 45dLrtQZ2pkHizBpt3P3yyJKkhcFHnhfNYPMSnz3yVEbdWm3Hj6Kr5TgmGAn3Far8LVaQf1th2n3DJVTRkfeB5ZkHxWozSX</p>
+<p dir="auto"><strong _msttexthash="11109358" _msthash="437">PayPal：</strong> <animated-image data-catalyst=""><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JZ8PP3YE9J62L" rel="nofollow" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/fc554ca4732b2afec9a15c0d1e8e41c6a6bb8babeb141863651c63df4da69334/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f47422f692f62746e2f62746e5f646f6e6174655f534d2e676966" alt="托尔兹二卫军" data-canonical-src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage" _mstalt="81510" _msthash="438"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="" _msthidden="4">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JZ8PP3YE9J62L" target="_blank" _msthidden="1">
+          
+        <span data-target="animated-image.imageContainer" _msthidden="1">
+            <img data-target="animated-image.replacedImage" alt="torzdf" class="AnimatedImagePlayer-animatedImage" src="https://camo.githubusercontent.com/fc554ca4732b2afec9a15c0d1e8e41c6a6bb8babeb141863651c63df4da69334/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f47422f692f62746e2f62746e5f646f6e6174655f534d2e676966" _msthidden="A" _mstalt="81510" _msthash="439" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="74" height="21"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play torzdf" hidden="" _msthidden="A" _mstaria-label="161681" _msthash="440"></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="" _msthidden="2">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play torzdf" _msthidden="A" _mstaria-label="161681" _msthash="441">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="Open torzdf in new window" class="AnimatedImagePlayer-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=JZ8PP3YE9J62L" target="_blank" _msthidden="A" _mstaria-label="507442" _msthash="442">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto" _msttexthash="131885" _msthash="443">@andenixa</h3><a id="user-content-andenixa" class="anchor" aria-label="永久链接：@andenixa" href="#andenixa" _mstaria-label="396110" _msthash="444"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto" _msttexthash="658608626" _msthash="445">Unbalanced 和 OHR 模型的创建者，以及在训练过程中扩展各种功能。Andenixa 目前正在开发新模型，并将接受捐赠请求。</p>
+<p dir="auto"><strong _msttexthash="11109358" _msthash="446">PayPal：</strong> <animated-image data-catalyst=""><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=NRVLQYGS6NWTU" rel="nofollow" data-target="animated-image.originalLink"><img src="https://camo.githubusercontent.com/fc554ca4732b2afec9a15c0d1e8e41c6a6bb8babeb141863651c63df4da69334/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f47422f692f62746e2f62746e5f646f6e6174655f534d2e676966" alt="安德尼萨" data-canonical-src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_SM.gif" style="max-width: 100%; display: inline-block;" data-target="animated-image.originalImage" _mstalt="115141" _msthash="447"></a>
+      <span class="AnimatedImagePlayer" data-target="animated-image.player" hidden="" _msthidden="4">
+        <a data-target="animated-image.replacedLink" class="AnimatedImagePlayer-images" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=NRVLQYGS6NWTU" target="_blank" _msthidden="1">
+          
+        <span data-target="animated-image.imageContainer" _msthidden="1">
+            <img data-target="animated-image.replacedImage" alt="andenixa" class="AnimatedImagePlayer-animatedImage" src="https://camo.githubusercontent.com/fc554ca4732b2afec9a15c0d1e8e41c6a6bb8babeb141863651c63df4da69334/68747470733a2f2f7777772e70617970616c6f626a656374732e636f6d2f656e5f47422f692f62746e2f62746e5f646f6e6174655f534d2e676966" _msthidden="A" _mstalt="115141" _msthash="448" style="display: block; opacity: 1;">
+          <canvas class="AnimatedImagePlayer-stillImage" aria-hidden="true" width="74" height="21"></canvas></span></a>
+        <button data-target="animated-image.imageButton" class="AnimatedImagePlayer-images" tabindex="-1" aria-label="Play andenixa" hidden="" _msthidden="A" _mstaria-label="204412" _msthash="449"></button>
+        <span class="AnimatedImagePlayer-controls" data-target="animated-image.controls" hidden="" _msthidden="2">
+          <button data-target="animated-image.playButton" class="AnimatedImagePlayer-button" aria-label="Play andenixa" _msthidden="A" _mstaria-label="204412" _msthash="450">
+            <svg aria-hidden="true" focusable="false" class="octicon icon-play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 13.5427V2.45734C4 1.82607 4.69692 1.4435 5.2295 1.78241L13.9394 7.32507C14.4334 7.63943 14.4334 8.36057 13.9394 8.67493L5.2295 14.2176C4.69692 14.5565 4 14.1739 4 13.5427Z">
+            </path></svg>
+            <svg aria-hidden="true" focusable="false" class="octicon icon-pause" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="2" width="3" height="12" rx="1"></rect>
+              <rect x="9" y="2" width="3" height="12" rx="1"></rect>
+            </svg>
+          </button>
+          <a data-target="animated-image.openButton" aria-label="Open andenixa in new window" class="AnimatedImagePlayer-button" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=NRVLQYGS6NWTU" target="_blank" _msthidden="A" _mstaria-label="581607" _msthash="451">
+            <svg aria-hidden="true" class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M10.604 1h4.146a.25.25 0 01.25.25v4.146a.25.25 0 01-.427.177L13.03 4.03 9.28 7.78a.75.75 0 01-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0110.604 1zM3.75 2A1.75 1.75 0 002 3.75v8.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 12.25v-3.5a.75.75 0 00-1.5 0v3.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-8.5a.25.25 0 01.25-.25h3.5a.75.75 0 000-1.5h-3.5z"></path>
+            </svg>
+          </a>
+        </span>
+      </span></animated-image></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="12257583" _msthash="452">如何贡献</h1><a id="user-content-how-to-contribute" class="anchor" aria-label="永久链接：如何贡献" href="#how-to-contribute" _mstaria-label="653081" _msthash="453"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="50056539" _msthash="454">对于对生成模型感兴趣的人</h2><a id="user-content-for-people-interested-in-the-generative-models" class="anchor" aria-label="永久链接：对生成模型感兴趣的人" href="#for-people-interested-in-the-generative-models" _mstaria-label="2175927" _msthash="455"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="190151871" _msthash="456">转到 'faceswap-model' 讨论/建议/提交当前算法的替代方案。</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="16119259" _msthash="457">对于开发人员</h2><a id="user-content-for-devs" class="anchor" aria-label="永久链接：对于开发人员" href="#for-devs" _mstaria-label="338013" _msthash="458"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="17997863" _msthash="459">完整阅读此 README</li>
+<li _msttexthash="10701821" _msthash="460">Fork 存储库</li>
+<li _msttexthash="7965074" _msthash="461">玩弄它</li>
+<li _msttexthash="42548974" _msthash="462">检查“dev”标签的问题</li>
+<li _msttexthash="659444149" _msthash="463">对于对计算机视觉和 openCV 更感兴趣的开发人员，请查看带有 'opencv' 标签的问题。也可以随意添加您自己的替代方案/改进</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="37022492" _msthash="464">对于非开发高级用户</h2><a id="user-content-for-non-dev-advanced-users" class="anchor" aria-label="永久链接：适用于非开发高级用户" href="#for-non-dev-advanced-users" _mstaria-label="1020097" _msthash="465"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="17997863" _msthash="466">完整阅读此 README</li>
+<li _msttexthash="14783678" _msthash="467">克隆存储库</li>
+<li _msttexthash="7965074" _msthash="468">玩弄它</li>
+<li _msttexthash="51693655" _msthash="469">检查“advuser”标签的问题</li>
+<li _msttexthash="63760411" _msthash="470">也可以去 '<a href="https://faceswap.dev/forum" rel="nofollow" _istranslated="1">faceswap 论坛</a>' 帮助其他人。</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="19749535" _msthash="471">对于最终用户</h2><a id="user-content-for-end-users" class="anchor" aria-label="永久链接：对于最终用户" href="#for-end-users" _mstaria-label="504543" _msthash="472"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li _msttexthash="122625542" _msthash="473">在此处获取代码，如果可以的话，请使用它</li>
+<li _msttexthash="187774873" _msthash="474">您也可以前往 <a href="https://faceswap.dev/forum" rel="nofollow" _istranslated="1">faceswap 论坛</a>并提供帮助或从他人那里获得帮助。</li>
+<li _msttexthash="708915090" _msthash="475">要有耐心。对于开发人员来说，这也是一项相对较新的技术。已经投入了大量精力使该程序易于普通用户使用。这需要时间！</li>
+<li _msttexthash="199550845" _msthash="476"><strong _istranslated="1">通知</strong>任何与运行代码相关的问题都必须在 <a href="https://faceswap.dev/forum" rel="nofollow" _istranslated="1">faceswap 论坛</a>中打开！</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto" _msttexthash="16432221" _msthash="477">关于机器学习</h1><a id="user-content-about-machine-learning" class="anchor" aria-label="永久链接：关于机器学习" href="#about-machine-learning" _mstaria-label="867711" _msthash="478"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto" _msttexthash="381517760" _msthash="479">计算机如何知道如何识别/塑造面部？机器学习的工作原理是什么？什么是神经网络？</h2><a id="user-content-how-does-a-computer-know-how-to-recognizeshape-faces-how-does-machine-learning-work-what-is-a-neural-network" class="anchor" aria-label="永久链接：计算机如何知道如何识别/塑造人脸？机器学习的工作原理是什么？什么是神经网络？" href="#how-does-a-computer-know-how-to-recognizeshape-faces-how-does-machine-learning-work-what-is-a-neural-network" _mstaria-label="8258939" _msthash="480"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font _mstmutation="1" _msttexthash="239218577" _msthash="482">这很复杂。这里有一个很好的视频，让这个过程变得易于理解：</font><a href="https://www.youtube.com/watch?v=R9OHn5ZF4Uo" rel="nofollow"><img src="https://camo.githubusercontent.com/658049172e7dc171103c1247f495c8f98a07287a8c059e8a7a0563bc79c8bf20/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f52394f486e355a4634556f2f302e6a7067" alt="机器如何学习" data-canonical-src="https://img.youtube.com/vi/R9OHn5ZF4Uo/0.jpg" style="max-width: 100%;" _mstalt="306436" _msthash="481"></a></p>
+<p dir="auto"><font _mstmutation="1" _msttexthash="217648236" _msthash="484">下面是一个更深入的视频，试图解释神经网络的基本功能：</font><a href="https://www.youtube.com/watch?v=aircAruvnKk" rel="nofollow"><img src="https://camo.githubusercontent.com/5ef4d2931e18e8d77ae2c3b88b14257f21a42b887e8dcbfa53cb25f0d4e32344/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f61697263417275766e4b6b2f302e6a7067" alt="机器如何学习" data-canonical-src="https://img.youtube.com/vi/aircAruvnKk/0.jpg" style="max-width: 100%;" _mstalt="306436" _msthash="483"></a></p>
+<p dir="auto" _msttexthash="50357944" _msthash="485">tl;DR：训练数据 + 试错</p>
+</article></div>
